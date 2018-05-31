@@ -1,13 +1,46 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>The HTML5 Herald</title>
-  <link rel="stylesheet" href="css/paper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+    <style>
+        @page {
+            size: A4
+        }
+        .top-section{
+            height: 15%;
+        }
+        .left-content{
+            width: 25%;
+            background-color: red;
+            height: 85%;
+            box-sizing: border-box;
+            float:left;
+        }
+        .right-content{
+            width: 75%;
+            border: 1px solid red;
+            height: 85%;
+            box-sizing: border-box;
+            float: right;
+        }
+    </style>
+    <title>Document</title>
 </head>
 
-<body>
-    <h1>This is from the container v4</h1>
+
+<body class="A4">
+
+    <!-- Each sheet element should have the class "sheet" -->
+    <!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
+    <section class="sheet">
+        <div class="top-section">noodle</div>
+
+        <div class="left-content"></div>
+        <div class="right-content"></div>
+    </section>
+
 </body>
+
+
 </html>
